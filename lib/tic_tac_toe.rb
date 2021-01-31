@@ -57,6 +57,8 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
+
+    
   else
     puts "Invalid move, try again"
     turn(board)
@@ -112,7 +114,7 @@ def play(board)
   if won?(board)
     puts "Congratulations #{current_player(board)}"
   elsif draw?(board)
-    puts "Looks like a draw"
+    puts "Cat's Game!"
   else
     puts "Ummmm..."
   end
